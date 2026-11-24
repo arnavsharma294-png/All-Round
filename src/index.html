@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#121914">
+<meta name="description" content="All Round brings sleep, movement and daily habits into one personal health journal.">
+<title>All Round — Your data. Your intelligence.</title>
+<style>/* STYLES */</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header" id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="All Round home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>All Round</span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#experience">The experience</a><a href="#privacy">Privacy</a></nav>
+    <a class="nav-cta" href="#journal">Open journal</a>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="label hero-kicker"><span class="indicator"></span> Personal intelligence</p>
+      <h1 id="hero-title"><span class="hero-title-line">All</span>
+        <em>Round<span>.</span></em></h1>
+      <p class="tagline">Your data. Your intelligence.</p>
+      <p class="hero-description">See how your sleep, movement and daily habits fit together. Find patterns worth acting on, with your data in your hands.</p>
+      <a class="cta" href="#experience">Explore your signals <span class="cta-icon" aria-hidden="true"></span></a>
+    </div>
+    <figure class="hero-figure" aria-labelledby="figure-caption">
+      <div class="instrument hero-instrument" aria-hidden="true">
+        <div class="instrument-grid"></div><div class="instrument-target"></div>
+        <span class="cross cross-tl"></span><span class="cross cross-tr"></span><span class="cross cross-bl"></span><span class="cross cross-br"></span>
+        <canvas class="sculpture" id="hero-scene"></canvas>
+        <div class="fallback-sculpture"><i></i><i></i><i></i></div>
+        <div class="figure-label figure-label-top"><span class="live-point"></span> Signal in motion</div>
+        <div class="figure-label figure-label-right">Sleep<br>Movement<br>Habits</div>
+      </div>
+      <figcaption class="figure-caption" id="figure-caption"><span>Daily signals, visualized</span><span>SVG03</span></figcaption>
+    </figure>
+    <div class="hero-base"><a href="#experience"><span class="scroll-mark" aria-hidden="true"></span> Scroll to explore</a></div>
+  </section>
+
+  <section class="experience" id="experience" aria-label="The experience">
+    <div class="experience-pin">
+      <div class="wrap experience-frame">
+        <div class="story-heading"><p class="label"><span class="indicator"></span> The experience</p><span class="label story-count" aria-hidden="true"><span id="story-current">01</span> / 03</span></div>
+        <div class="experience-grid">
+          <figure class="story-figure" aria-hidden="true">
+            <div class="instrument story-instrument">
+              <div class="instrument-grid"></div><div class="instrument-target"></div>
+              <span class="cross cross-tl"></span><span class="cross cross-tr"></span><span class="cross cross-bl"></span><span class="cross cross-br"></span>
+              <canvas class="sculpture" id="story-scene"></canvas>
+              <div class="fallback-sculpture"><i></i><i></i><i></i></div>
+              <div class="figure-label figure-label-top" id="story-channel">Daily signals</div>
+            </div>
+          </figure>
+          <div class="chapter-copy">
+            <article class="chapter" data-chapter="0"><p class="label chapter-label">Collect</p><h2>One place for <em>your signals.</em></h2><p>Bring together sleep from a watch, steps from a phone, and the routines you log yourself.</p></article>
+            <article class="chapter" data-chapter="1" hidden><p class="label chapter-label">Understand</p><h2>See what <em>moves together.</em></h2><p>Compare days to see when better sleep and more activity show up together. Open the evidence behind an insight.</p></article>
+            <article class="chapter" data-chapter="2" hidden><p class="label chapter-label">Own</p><h2>Keep the keys <em>to your data.</em></h2><p>Choose what the app can use, review the record behind a suggestion, and keep a copy when you leave.</p></article>
+          </div>
+        </div>
+        <div class="story-footer">
+          <div class="story-index" aria-label="Experience chapters">
+            <button type="button" data-step="0" aria-current="step"><span></span> Collect</button>
+            <button type="button" data-step="1"><span></span> Understand</button>
+            <button type="button" data-step="2"><span></span> Own</button>
+          </div>
+          <a href="#journal" class="story-skip">Skip to journal</a>
+        </div>
+        <div class="story-progress" aria-hidden="true"><div id="story-progress"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journal paper" id="journal" aria-labelledby="journal-title">
+    <div class="wrap journal-inner">
+      <div class="journal-head"><div><p class="label"><span class="indicator"></span> Personal journal</p><h2 id="journal-title">A week in <em>your life.</em></h2></div><p class="sample-label"><span></span> Interactive sample</p></div>
+      <div class="journal-grid">
+        <article class="chart-panel">
+          <div class="chart-header"><div><h3>Daily trends</h3><p class="label chart-date">18–24 NOV 2026</p></div><div class="metric-controls" role="group" aria-label="Trend metric"><button type="button" data-metric="sleep" aria-pressed="true">Sleep</button><button type="button" data-metric="movement" aria-pressed="false">Movement</button><button type="button" data-metric="habits" aria-pressed="false">Habits</button></div></div>
+          <div class="chart-reading"><strong id="metric-average">7.2</strong> <span id="metric-unit">hours average</span></div>
+          <div class="graph-area">
+            <div class="graph-scale" aria-hidden="true"><span></span><span></span><span></span></div>
+            <canvas id="trend-chart" aria-hidden="true"></canvas>
+            <div class="graph-days" aria-label="Choose a day"></div>
+          </div>
+          <p class="chart-detail" id="metric-detail" aria-live="polite"></p>
+        </article>
+        <div class="notes-panel">
+          <article class="note insight" data-reveal>
+            <p class="label"><span class="note-dot"></span> Sample insight</p><h3>More sleep, more steps.</h3><p>In this sample week, days after at least seven hours of sleep averaged about 1,650 more steps.</p>
+            <details><summary>See the comparison</summary><p>8,353 steps on four days with seven or more hours of sleep. 6,703 steps on the other three days. This comparison describes one sample week.</p></details>
+          </article>
+          <article class="note nudge" data-reveal>
+            <p class="label"><span class="note-dot"></span> Habit nudge</p><h3>Take a walk after lunch.</h3><p>Set a 10-minute walk as your next habit.</p>
+            <button type="button" id="nudge-button" aria-pressed="false">Save this nudge</button><span id="nudge-status" class="sr-only" role="status"></span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap privacy-inner">
+      <div><p class="label"><span class="indicator"></span> Data ownership</p><h2 id="privacy-title">Your life.<br><em>Your record.</em></h2></div>
+      <div class="privacy-copy"><div class="privacy-orbit" aria-hidden="true"><div class="privacy-orbit-field"><i></i><i></i><i></i></div><div class="privacy-orbit-lock"></div></div><p>This prototype runs in your browser using sample records. Explore the journal without connecting a device.</p><a href="./index.html" download="all-round.html" id="download-demo" class="quiet-cta">Download the offline prototype</a></div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><a href="#top" class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>All Round</a><span class="label">SVG03 · Know Thyself challenge</span><a href="#top">Back to top</a></div></footer>
+<script>/* SCENE */</script>
+<script>/* APP */</script>
+</body>
+</html>
